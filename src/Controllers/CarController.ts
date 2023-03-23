@@ -16,4 +16,10 @@ export default class CarController {
 
     return this.res.status(201).json(newCar);
   }
+
+  public async findAll() {
+    const allCars = await this.service.findAll();
+
+    return this.res.status(201).json(allCars);
+  }
 }

@@ -21,4 +21,12 @@ export default class CarModel {
   public async create(car: ICar): Promise<ICar> {
     return this.model.create({ ...car });
   }
+
+  public async findAll() {
+    return this.model.find({});
+  }
+
+  public async findById(id: string) {
+    return this.model.findOne({ id });
+  }
 }

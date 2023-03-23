@@ -9,4 +9,11 @@ export default class CarService {
     
     return new Car(newCar);
   }
+
+  public async findAll() {
+    const carModel = new CarModel();
+    const allCars = await carModel.findAll();
+  
+    return allCars.map((e) => new Car(e));
+  }
 }
