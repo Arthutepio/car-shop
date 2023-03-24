@@ -36,6 +36,17 @@ describe('Testa a camade "Service"', function () {
     expect(result).to.be.deep.equal(output);
   });
 
+  it('Verifica se em caso de erro o retorno é null', async function () {
+    // GIVEN - Dado...
+
+    // WHEN - Quando...
+    const service = new CarService();
+    const result = service.createCarDomain(null);
+
+    // THEN - Então...
+    expect(result).to.be.deep.equal(null);
+  });
+
   it('Verifica se é possível listar todos os carros com sucesso', async function () {
     // GIVEN - Dado...
     const output = [
