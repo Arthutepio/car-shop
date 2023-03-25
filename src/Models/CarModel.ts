@@ -15,19 +15,4 @@ export default class CarModel extends AbstractODM<ICar> {
     });
     super(schema, 'Car');
   }
-
-  // public async findAll() {
-  //   return this.model.find({});
-  // }
-
-  // public async findById(id: string) {
-  //   return this.model.findOne({ _id: id });
-  // }
-
-  // public async updateById(id: string, car: ICar) {
-  //   const filter = { _id: id };
-  //   const update = { ...car };
-    
-  //   return this.model.findOneAndUpdate(filter, update, { new: true });
-  // }
 }
