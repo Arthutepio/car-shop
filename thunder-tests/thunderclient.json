@@ -64,5 +64,24 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "af5bf55c-f05a-4e5a-94cb-f59f72062773",
+    "colId": "b4a7a87c-cfbb-4b72-bc4c-27ca98e0070f",
+    "containerId": "",
+    "name": "Motorcycle Create",
+    "url": "localhost:3001/motorcycles",
+    "method": "POST",
+    "sortNum": 60000,
+    "created": "2023-03-25T16:00:05.632Z",
+    "modified": "2023-03-25T16:01:19.002Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"model\": \"Honda Cb 600f Hornet\",\n  \"year\": 2005,\n  \"color\": \"Yellow\",\n  \"status\": true,\n  \"buyValue\": 30.000,\n  \"category\": \"Street\",\n  \"engineCapacity\": 600\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
