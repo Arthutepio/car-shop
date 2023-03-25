@@ -17,4 +17,11 @@ export default class MotorcycleService {
     
     return this.createMotorcycleDomain(newMoto);
   }
+
+  public async findAll(): Promise<(Motorcycle | null)[]> {
+    const carModel = new MotorcycleModel();
+    const allMoto = await carModel.findAll();
+  
+    return allMoto.map((moto) => this.createMotorcycleDomain(moto));
+  }
 }
