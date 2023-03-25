@@ -12,6 +12,7 @@ export default class MotorcycleService {
 
   public async create(moto: IMotorcyclles): Promise<Motorcycle | null> {
     const carModel = new MotorcycleModel();
+    
     const newMoto = await carModel.create(moto);
     
     return this.createMotorcycleDomain(newMoto);

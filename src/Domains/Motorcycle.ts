@@ -3,7 +3,7 @@ import { TCategory } from '../Interfaces/TCategory';
 import Vehicle from './Vehicle';
 
 export default class Motorcycle extends Vehicle {
-  private category: TCategory;
+  private category: TCategory | string;
   private engineCapacity: number;
 
   constructor(moto: IMotorcyclle) {

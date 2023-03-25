@@ -2,7 +2,7 @@ import IVehicle from './IVehicle';
 import { TCategory } from './TCategory';
 
 interface IMotorcyclles extends IVehicle{
-  category: TCategory
+  category: TCategory | string
   engineCapacity: number 
 }
 
