@@ -1,9 +1,9 @@
 import IVehicle from './IVehicle';
 import { TCategory } from './TCategory';
 
-interface IMotorcyclles extends IVehicle{
+interface IMotorcycles extends IVehicle{
   category: TCategory | string
   engineCapacity: number 
 }
 
-export default IMotorcyclles;
+export default IMotorcycles;

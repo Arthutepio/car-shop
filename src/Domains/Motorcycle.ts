@@ -1,4 +1,4 @@
-import IMotorcyclle from '../Interfaces/IMotorcycle';
+import IMotorcycle from '../Interfaces/IMotorcycle';
 import { TCategory } from '../Interfaces/TCategory';
 import Vehicle from './Vehicle';
 
@@ -6,7 +6,7 @@ export default class Motorcycle extends Vehicle {
   private category: TCategory | string;
   private engineCapacity: number;
 
-  constructor(moto: IMotorcyclle) {
+  constructor(moto: IMotorcycle) {
     super({
       id: moto.id,
       model: moto.model,

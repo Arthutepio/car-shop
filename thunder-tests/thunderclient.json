@@ -97,5 +97,38 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "76578be2-f84d-4da1-8806-5515651d9cef",
+    "colId": "b4a7a87c-cfbb-4b72-bc4c-27ca98e0070f",
+    "containerId": "",
+    "name": "Moto FindById",
+    "url": "localhost:3001/motorcycles/641f6b44137fe62a66ac592c",
+    "method": "GET",
+    "sortNum": 80000,
+    "created": "2023-03-25T21:19:31.347Z",
+    "modified": "2023-03-25T21:44:51.946Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "7dca50e7-64d2-40f1-8528-c7864124de52",
+    "colId": "b4a7a87c-cfbb-4b72-bc4c-27ca98e0070f",
+    "containerId": "",
+    "name": "Motorcycle UpdateById",
+    "url": "localhost:3001/motorcycles/641f6b44137fe62a66ac592c",
+    "method": "PUT",
+    "sortNum": 90000,
+    "created": "2023-03-25T21:45:01.990Z",
+    "modified": "2023-03-25T21:55:01.903Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"model\": \"Honda Bis\",\n  \"year\": 2015,\n  \"color\": \"Black\",\n  \"status\": true,\n  \"buyValue\": 20.000,\n  \"category\": \"Street\",\n  \"engineCapacity\": 125\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]

@@ -1,5 +1,4 @@
-import { model, Model, models, Schema } from 'mongoose';
-import ICar from '../Interfaces/ICar';
+import { model, Model, models, Schema, UpdateQuery } from 'mongoose';
 
 export default abstract class AbstractODM<T> {
   protected model: Model<T>;
@@ -24,10 +23,11 @@ export default abstract class AbstractODM<T> {
     return this.model.findOne({ _id: id });
   }
   
-  public async updateById(id: string, obj: ICar) {
-    const filter = { _id: id };
-    const update = { ...obj };
-    
-    return this.model.findOneAndUpdate(filter, update, { new: true });
+  public async updateById(id: string, obj: Partial<T>) {  
+    return this.model.findOneAndUpdate(
+      { _id: id },
+      { ...obj } as UpdateQuery<T>,
+      { new: true },
+    );
   }
 }
