@@ -1,0 +1,1 @@
+export type TCategory = 'Street' | 'Custom' | 'Trail';

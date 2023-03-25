@@ -1,6 +1,5 @@
 import IVehicle from './IVehicle';
-
-type TCategory = 'Street' | 'Custom' | 'Trail';
+import { TCategory } from './TCategory';
 
 interface IMotorcyclles extends IVehicle{
   category: TCategory
