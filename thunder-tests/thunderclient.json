@@ -37,11 +37,11 @@
     "colId": "b4a7a87c-cfbb-4b72-bc4c-27ca98e0070f",
     "containerId": "",
     "name": "Car UpdateById",
-    "url": "localhost:3001/cars/641f0c12a906487e483009f3",
+    "url": "localhost:3001/cars/641f4565a2112314a999a0f7",
     "method": "PUT",
     "sortNum": 50000,
     "created": "2023-03-23T23:32:22.404Z",
-    "modified": "2023-03-25T15:06:15.011Z",
+    "modified": "2023-03-25T19:03:12.928Z",
     "headers": [],
     "params": [],
     "body": {

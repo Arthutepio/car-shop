@@ -102,6 +102,38 @@ describe('Testa a camade "Service"', function () {
     // THEN - Então...
     expect(result).to.be.deep.equal(output);
   });
+
+  it('Verifica se é possível atualizar dados de um carro por ID com sucesso', async function () {
+    // GIVEN - Dado...
+    const input = {
+      model: 'Gol',
+      year: 2010,
+      color: 'Black',
+      status: true,
+      buyValue: 25.990,
+      doorsQty: 4,
+      seatsQty: 5,
+    };
+
+    const output = new Car({
+      id: '641db86c7ccda71135ec32d1',
+      model: 'Marea',
+      year: 2002,
+      color: 'Black',
+      status: true,
+      buyValue: 15.990,
+      doorsQty: 4,
+      seatsQty: 5,
+    });
+
+    sinon.stub(Model, 'findOneAndUpdate').resolves(output);
+    // WHEN - Quando...
+    const service = new CarService();
+    const result = await service.updateById('641db86c7ccda71135ec32d1', input);
+
+    // THEN - Então...
+    expect(result).to.be.deep.equal(output);
+  });
   afterEach(function () {
     sinon.restore();
   });
