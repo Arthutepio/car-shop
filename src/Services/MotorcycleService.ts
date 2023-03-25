@@ -11,17 +11,24 @@ export default class MotorcycleService {
   }
 
   public async create(moto: IMotorcyclles): Promise<Motorcycle | null> {
-    const carModel = new MotorcycleModel();
+    const motoModel = new MotorcycleModel();
     
-    const newMoto = await carModel.create(moto);
+    const newMoto = await motoModel.create(moto);
     
     return this.createMotorcycleDomain(newMoto);
   }
 
   public async findAll(): Promise<(Motorcycle | null)[]> {
-    const carModel = new MotorcycleModel();
-    const allMoto = await carModel.findAll();
+    const motoModel = new MotorcycleModel();
+    const allMoto = await motoModel.findAll();
   
     return allMoto.map((moto) => this.createMotorcycleDomain(moto));
+  }
+
+  public async findById(id: string) {
+    const motoModel = new MotorcycleModel();
+    const moto = await motoModel.findById(id);
+    
+    return this.createMotorcycleDomain(moto);
   }
 }
