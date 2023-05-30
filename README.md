@@ -24,7 +24,7 @@ docker compose up -d
 ```
 docker exec -it car_shop bash
 ```
-6 - Agora é só testar CRUD com alguma ferramenta de sua preferência. (Thuder Client, Insomia, Postman... )
+6 - Agora é só testar CRUD com alguma ferramenta de sua preferência. (Thuder Client, Insomnia, Postman... )
 
 ## 🛠️ Desenvolvido com:
 * [Node.js](https://nodejs.org/pt-br/docs/) - para execução de testes e instalação de pacotes de bibliotecas;
