@@ -4,6 +4,7 @@ Este é um projeto de backend que tem como objetivo desenvolver uma API para ger
 
 ## 🔧 Instalação
 Para utilizar o repositório no desenvolvimento, siga os seguintes passos:
+
 1 - Certifique-se de ter o Node.js e o Docker instalados em sua máquina.
 
 2 - Clone o repositório: 
